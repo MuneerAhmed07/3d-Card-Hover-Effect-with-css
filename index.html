@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Hover</title>
+
+    <!-- csutom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="card-wrapper">
+        <div class="card-container">
+
+            <div class="card">
+
+                <!-- Card Front -->
+                <div class="card-contents card-front">
+                    <div class="card-depth">
+                        <h2>Click Card</h2>
+                        <hr>
+                        <p>For 3D Rotation</p>
+                    </div>
+                </div>
+                <!-- Card Back -->
+                <div class="card-contents card-back">
+                    <div class="card-depth">
+                        <h2>Click card again</h2>
+                        <hr>
+                        <p>To Turn Back</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- custom js code -->
+
+    <script>
+
+        const card = document.querySelector(".card");
+
+        function clickRotate() {
+            card.classList.toggle("rotated");
+        }
+
+        card.addEventListener("click", clickRotate);
+
+    </script>
+    
+</body>
+</html>
